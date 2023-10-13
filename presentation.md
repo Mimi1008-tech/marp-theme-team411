@@ -8,7 +8,6 @@ class: title
 # aaaa
 ## ① テスト
 
-
 ---
 <!--
 class: slides

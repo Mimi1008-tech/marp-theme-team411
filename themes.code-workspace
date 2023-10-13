@@ -4,5 +4,9 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"markdown.marp.themes": [
+			"https://mimi1008-tech.github.io/marp-theme-team411/team411.css"
+		]
+	}
 }
