@@ -24,12 +24,6 @@ section {
     font-family: "Arial", "Noto Sans JP";
     padding: 2rem;
     width: 100%;
-
-    position: relative;
-
-    background-repeat: no-repeat;
-    background-size: 1rem 1rem;
-    background-position: right 3rem bottom 1.5rem;
 }
 
 section.title{
@@ -76,7 +70,31 @@ section.slides{
     flex-direction: column;
     justify-content: flex-start;    
     align-items: flex-start;
-    background-image: url("https://mimi1008-tech.github.io/marp-theme-team411/logo.png");
+}
+
+section.slides::after,
+section.title:after{
+    display: block;
+
+    position: absolute;
+
+    left: 1rem;
+    bottom: 1rem;
+
+    content: "";
+
+    height: 2rem;
+    width: 6rem;
+
+    z-index: 1;
+
+    background-image: url("./logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+section.title:after{
+    left: 1rem;
 }
 
 section.slides h1{
@@ -120,12 +138,16 @@ section.slides pre code{
 
 section img{
     display: block;
+    margin: 0 auto;
+}
 
-    border-radius: .5rem;
+section table{
+    margin: 0 auto;
+}
 
-    margin-top: .5rem;
-    height: 400px;
-    position: absolute;
+section table th{
+    background-color: var(--primary-color);
+    color: var(--text-white);
 }
 
 footer{
