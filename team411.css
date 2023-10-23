@@ -2,7 +2,7 @@
 /* @theme team411 */
 
 @import 'default';
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
 :root{
     --primary-color: #414bb2;
@@ -38,6 +38,7 @@ section.title h1 {
     color: #fff;
     font-size: 3rem;
     text-align: center;
+    font-weight: 700;
 }
 
 section.title h1::after{
@@ -59,6 +60,7 @@ section.title h2{
     font-weight: normal;
     margin: 0 !important;
     padding: 0;
+    font-weight: 700;
 }
 
 section.slides{
@@ -103,6 +105,7 @@ section.slides h1{
     font-size: 2rem;
     padding: 0;
     margin: 0;
+    font-weight: 700;
 }    
 
 section.slides h1::after{
@@ -122,6 +125,11 @@ section.slides h2{
     font-size: 1.5rem;
 
     color: var(--text-dark-gray);
+    font-weight: 700;
+}
+
+section.slides h3{
+    font-weight: 700;
 }
 
 section.slides pre{
