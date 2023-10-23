@@ -2,6 +2,7 @@
 marp: true
 theme: team411
 ---
+<!-- paginate: true -->
 <!--
 class: title
 -->

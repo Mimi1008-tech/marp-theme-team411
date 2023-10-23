@@ -22,6 +22,7 @@
 section {
     font-family: "Arial", "Noto Sans JP";
     padding: 2rem;
+
     width: 100%;
 }
 
@@ -73,8 +74,8 @@ section.slides{
     align-items: flex-start;
 }
 
-section.slides::after,
-section.title:after{
+section.slides::before,
+section.title:before{
     display: block;
 
     position: absolute;
@@ -89,7 +90,7 @@ section.title:after{
 
     z-index: 1;
 
-    background-image: url("./logo.png");
+    background-image: url("https://mimi1008-tech.github.io/marp-theme-team411/logo.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -157,10 +158,15 @@ section table th{
     color: var(--text-white);
 }
 
-footer{
-    display: block;
+section.title::after{
+    display: none !important;
+}
+
+section.slides::after {
     position: absolute;
-    right: 0;
-    margin-left: 2rem;
-    padding: 0;
+
+    right: 1.5rem;
+    bottom: 0.5rem;
+
+    font-size: 1.5rem;
 }
